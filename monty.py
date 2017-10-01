@@ -80,7 +80,7 @@ def main(trials):
 
 if __name__ == '__main__':
     try:
-        trials=sys.argv[1]
+        trials=int(sys.argv[1])
     except:
         trials=1000
     main(trials)
