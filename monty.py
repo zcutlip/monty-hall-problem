@@ -79,7 +79,12 @@ def main(trials):
     print("Non-switching player wins: %d" % game.non_switch_win_tally)
 
 if __name__ == '__main__':
-    main(1000)
+    try:
+        trials=sys.argv[1]
+    except:
+        trials=1000
+    main(trials)
+
         
             
         
